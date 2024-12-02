@@ -24,9 +24,21 @@ public class Lista {
         return true;
     }
 
+    public int buscar(String nome){
+        for(int i=0; i<quantidade; i++){
+            if(lista[i].equals(nome)){
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public boolean remover(String nome){
+
+    }
+
     private void aumentarArray() {
         lista = Arrays.copyOf(lista, quantidade+5);
     }
-
 
 }
