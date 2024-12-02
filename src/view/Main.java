@@ -18,6 +18,5 @@ public class Main {
         lista.remover("Pedro");
         System.out.println(Arrays.toString(lista.getLista()));
         System.out.println(lista.getQuantidade());
-
     }
 }
