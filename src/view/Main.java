@@ -15,6 +15,9 @@ public class Main {
         lista.adicionar("José");
         lista.adicionar("Matheus");
         System.out.println(Arrays.toString(lista.getLista()));
+        lista.remover("Pedro");
+        System.out.println(Arrays.toString(lista.getLista()));
+        System.out.println(lista.getQuantidade());
 
     }
 }

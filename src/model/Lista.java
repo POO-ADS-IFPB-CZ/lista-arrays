@@ -34,7 +34,19 @@ public class Lista {
     }
 
     public boolean remover(String nome){
+        int posicao = buscar(nome);
+        if(posicao == -1){
+            return false;
+        }
+        for(int i = posicao; i<quantidade-1; i++){
+            lista[i] = lista[i+1];
+        }
+        quantidade--;
+        return true;
+    }
 
+    public int getQuantidade(){
+        return quantidade;
     }
 
     private void aumentarArray() {
