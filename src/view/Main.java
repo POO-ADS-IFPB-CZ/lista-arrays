@@ -1,6 +1,5 @@
 package view;
 
-import model.Lista;
 import model.ListaGenerica;
 import model.Pessoa;
 
@@ -12,5 +11,16 @@ public class Main {
         ListaGenerica<Pessoa> listaPessoas = new ListaGenerica<>();
         listaPessoas.adicionar(new Pessoa("Maria"));
 
+        ListaGenerica<Integer> listaInteiros = new ListaGenerica<>();
+        listaInteiros.adicionar(1);
+
+        ordenar(listaPessoas);
+
     }
+
+    public static void ordenar(
+            ListaGenerica<? extends Comparable> lista){
+
+    }
+
 }
