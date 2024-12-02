@@ -1,22 +1,16 @@
 package view;
 
 import model.Lista;
-
-import java.util.Arrays;
+import model.ListaGenerica;
+import model.Pessoa;
 
 public class Main {
     public static void main(String[] args) {
-        Lista lista = new Lista();
-        System.out.println(Arrays.toString(lista.getLista()));
-        lista.adicionar("João");
-        lista.adicionar("Maria");
-        lista.adicionar("Pedro");
-        lista.adicionar("Ana");
-        lista.adicionar("José");
-        lista.adicionar("Matheus");
-        System.out.println(Arrays.toString(lista.getLista()));
-        lista.remover("Pedro");
-        System.out.println(Arrays.toString(lista.getLista()));
-        System.out.println(lista.getQuantidade());
+        ListaGenerica<String> listaString = new ListaGenerica<>();
+        listaString.adicionar("João");
+
+        ListaGenerica<Pessoa> listaPessoas = new ListaGenerica<>();
+        listaPessoas.adicionar(new Pessoa("Maria"));
+
     }
 }
